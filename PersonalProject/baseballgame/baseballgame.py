@@ -37,7 +37,7 @@ def check_nums(rand_nums):
     """
     while 1:
         users_number = user_nums()
-        print(users_number,rand_nums) # for check
+        # print(users_number,rand_nums) # for check
         strike = 0
         ball = 0
         for i in range(len(users_number)):
