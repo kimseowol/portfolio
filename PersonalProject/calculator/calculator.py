@@ -8,7 +8,7 @@ class MyApp(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         # set UI
-        ui_path = os.path.expanduser("/home/rapa/test/0118/mycal.ui")
+        ui_path = os.path.expanduser("/home/rapa/mycal.ui")
         ui_file = QtCore.QFile(ui_path)
         ui_file.open(QtCore.QFile.ReadOnly)
         loader = QtUiTools.QUiLoader()
@@ -16,7 +16,7 @@ class MyApp(QtWidgets.QMainWindow):
         ui_file.close()
         self.ui.show()
 
-        #숫자입력
+        # digit
         self.ui.number01.clicked.connect(self.btn_number01)
         self.ui.number02.clicked.connect(self.btn_number02)
         self.ui.number03.clicked.connect(self.btn_number03)
@@ -28,15 +28,15 @@ class MyApp(QtWidgets.QMainWindow):
         self.ui.number09.clicked.connect(self.btn_number09)
         self.ui.number0.clicked.connect(self.btn_number0)
         self.ui.number00.clicked.connect(self.btn_number00)
-        #버튼입력
-        self.ui.button_del.clicked.connect(self.del_num)
-        self.ui.button_dot.clicked.connect(self.dot_num)
-        self.ui.button_plus.clicked.connect(self.plus_num)
-        self.ui.button_sub.clicked.connect(self.sub_num)
-        self.ui.button_mult.clicked.connect(self.mult_num)
-        self.ui.button_divide.clicked.connect(self.divide_num)
-        self.ui.button_result.clicked.connect(self.result)
-        self.ui.button_CE.clicked.connect(self.reset)
+        # operator
+        self.ui.button_del.clicked.connect(self.delete_number)
+        self.ui.button_dot.clicked.connect(self.dot_number)
+        self.ui.button_plus.clicked.connect(self.plus_number)
+        self.ui.button_sub.clicked.connect(self.minus_number)
+        self.ui.button_mult.clicked.connect(self.multiply_number)
+        self.ui.button_divide.clicked.connect(self.divide_number)
+        self.ui.button_result.clicked.connect(self.result_number)
+        self.ui.button_reset.clicked.connect(self.reset_numbers)
 
     def btn_number01(self):
         self.number("1")
@@ -65,7 +65,7 @@ class MyApp(QtWidgets.QMainWindow):
     def btn_number09(self):
         self.number("9")
 
-    #연산부호 아래에 00000은 못하겠음 ㅜㅜ
+    # Below . could not be processed 0000 yet
     def btn_number0(self):
         exist_text = self.ui.lineEdit.text()
         check = re.compile('^0+')
@@ -77,25 +77,25 @@ class MyApp(QtWidgets.QMainWindow):
 
     def btn_number00(self):
         exist_text = self.ui.lineEdit.text()
-        if exist_text[-1].isdigit() or exist_text[-1] == ".":
+        if exist_text[-1].is_digit() or exist_text[-1] == ".":
             self.number("00")
 
     def number(self, num):
         exist_text = self.ui.lineEdit.text()
         self.ui.lineEdit.setText(exist_text + num)
 
-    def IsDigit(self):
+    def is_digit(self):
         exist_text = self.ui.lineEdit.text()
         if (exist_text[-1] == "+") | (exist_text[-1] == "-") | (exist_text[-1] == "/") | (exist_text[-1] == "*") | (exist_text[-1] == "."):
-            self.del_num()
+            self.delete_number()
 
-    def del_num(self):
+    def delete_number(self):
         exist_text = self.ui.lineEdit.text()
         self.ui.lineEdit.setText(exist_text[:-1])
 
-    def dot_num(self):
+    def dot_number(self):
         exist_text = self.ui.lineEdit.text()
-        if(exist_text[-1] == "+") | (exist_text[-1] == "-") | (exist_text[-1] == "/") | (exist_text[-1] == "*") | (exist_text[-1] == "."):
+        if(exist_text[-1] == "+") or (exist_text[-1] == "-") or (exist_text[-1] == "/") | (exist_text[-1] == "*") or (exist_text[-1] == "."):
             pass
         if "." in exist_text.split("+")[-1]:
             pass
@@ -114,32 +114,32 @@ class MyApp(QtWidgets.QMainWindow):
         else:
             self.ui.lineEdit.setText(exist_text+".")
 
-    def plus_num(self):
-        self.IsDigit()
+    def plus_number(self):
+        self.is_digit()
         self.number("+")
 
-    def sub_num(self):
-        self.IsDigit()
+    def minus_number(self):
+        self.is_digit()
         self.number("-")
 
-    def mult_num(self):
-        self.IsDigit()
+    def multiply_number(self):
+        self.is_digit()
         self.number("*")
 
-    def divide_num(self):
-        self.IsDigit()
+    def divide_number(self):
+        self.is_digit()
         self.number("/")
 
-    def result(self):
+    def result_number(self):
         exist_text = self.ui.lineEdit.text()
-        if (exist_text[-1] == "+") | (exist_text[-1] == "-") | (exist_text[-1] == "/") | (exist_text[-1] == "*") | (exist_text[-1] == ".") | (exist_text[-1] == "="):
-            self.del_num()
+        if (exist_text[-1] == "+") or (exist_text[-1] == "-") or (exist_text[-1] == "/") or (exist_text[-1] == "*") or (exist_text[-1] == ".") or (exist_text[-1] == "="):
+            self.delete_number()
         else:
             self.number("=")
             result = eval(exist_text)
             self.ui.lineEdit.setText(str(round(result, 6)))
 
-    def reset(self):
+    def reset_numbers(self):
         self.ui.lineEdit.setText("")
 
 
