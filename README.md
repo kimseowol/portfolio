@@ -5,7 +5,9 @@
 
 - 🧐 I’m currently learning **C++** and interested in **Houdini Pipeline**
 
-- 👨‍💻 Team Project 'Molo' I participated is available on **https://github.com/MOLA-kr/molo**
+- 👨‍💻 Team Project 'MOLO' I participated is available on **https://github.com/MOLA-kr/molo**
+
+  - 'MOLO' Shot Loader Using Kitsu API ( Demonstration Video ) : *https://youtu.be/nhqHIWsesd4*
 
 - 📝 Practice FX work site *https://gimterpan.creatorlink.net*
 
