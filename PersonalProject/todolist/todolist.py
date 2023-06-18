@@ -85,8 +85,6 @@ class ToDoListAction():
         if self.mylist[index][1] == "V":
             self.mylist[index][1] = "  "
         elif self.mylist[index][1] == "  ":
-            self.mylist[index][1] = "V"
-				#self.getlist()로 반복적인 결과를 얻기 때문에 변경
         return self.getlist()
 
     def mypath(self):
