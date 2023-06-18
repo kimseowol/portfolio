@@ -20,6 +20,7 @@
       > `save_script`, `clear_current_nuke_file`, `open_current_nuke_file`, `nuke_file_name` from `nuke_function.py`
       > `open_nuke`, `get_outputfiles_path_list`, `identify_nuke_file` from `molo_widget.py`
 
+  - 📝 Personal Python Project *https://github.com/kimseowol/portfolio/tree/main/PersonalProject*
   - 📝 Practice FX work site *https://gimterpan.creatorlink.net*
 
 <br>
