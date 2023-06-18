@@ -5,11 +5,13 @@
 
 - 🧐 I’m currently learning **C++** and interested in **Houdini Pipeline**
 
-- 👨‍💻 Team Project 'MOLO' I participated is available on **https://github.com/MOLA-kr/molo**
+- Portfolio video Link : *https://drive.google.com/file/d/1JULg0y2toxtE2OboqQLAByvilveMRaen/view?usp=sharing*
 
-  - 'MOLO' Shot Loader Using Kitsu API ( Demonstration Video ) : *https://youtu.be/nhqHIWsesd4*
-
-- 📝 Practice FX work site *https://gimterpan.creatorlink.net*
+  - 👨‍💻 Team Project 'MOLO' I participated is available on *https://github.com/MOLA-kr/molo*
+  
+    - 'MOLO' Shot Loader Using Kitsu API ( Demonstration Video ) : *https://youtu.be/nhqHIWsesd4*
+  
+  - 📝 Practice FX work site *https://gimterpan.creatorlink.net*
 
 - 📫 How to reach me **gimterpan@gmail.com**
 
