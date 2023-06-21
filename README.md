@@ -4,7 +4,7 @@
 
 - 🔭 I am current PipelineTD trainee from ScanlineVFX, and have previously wored from Giantstep as 3D artist
 
-- 🧐 I’m currently learning **C++** and interested in **Houdini Pipeline**
+- 🧐 I’m currently learning **C++**
 
 - 📫 How to reach me **gimterpan@gmail.com**
 
