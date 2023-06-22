@@ -1,6 +1,6 @@
 <h1 align="center">Hi, I'm kim seowol</h1>
 
-- 🔭 I am current PipelineTD trainee from ScanlineVFX, and have previously wored from Giantstep as 3D artist
+- 🔭 I am current PipelineTD trainee from ScanlineVFX, and have previously worked from Giantstep as 3D artist
 
 - 🧐 I’m currently learning **C++**
 
