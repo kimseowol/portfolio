@@ -1,6 +1,4 @@
 <h1 align="center">Hi, I'm kim seowol</h1>
-<h3 align="center">VFX PipelineTD from Korea</h3>
-<br>
 
 - 🔭 I am current PipelineTD trainee from ScanlineVFX, and have previously wored from Giantstep as 3D artist
 
@@ -21,7 +19,7 @@
       > `open_nuke`, `get_outputfiles_path_list`, `identify_nuke_file` from `molo_widget.py`
 
   - 📝 Personal Python Project *https://github.com/kimseowol/portfolio/tree/main/PersonalProject*
-  - 📝 Practice FX work site *https://gimterpan.creatorlink.net*
+  - 📝 Practice work site *https://gimterpan.creatorlink.net*
 
 <br>
 </p>
