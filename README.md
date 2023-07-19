@@ -13,16 +13,16 @@
 <br>
 </p>
 
-
+- 📹 Portfolio Summary video Link : *https://drive.google.com/file/d/1JULg0y2toxtE2OboqQLAByvilveMRaen/view?usp=sharing*
+- 📝 Personal Python Project *https://github.com/kimseowol/portfolio/tree/main/PersonalProject*
+- 📝 Houdini Practice work site *https://gimterpan.creatorlink.net*
 - 📝 Unreal Engine work site *https://gimterpan.creatorlink.net/Unreal*
 - 👨‍💻 Team Project 'MOLO' I participated is available on *https://github.com/MOLA-kr/molo*
-  - 'MOLO' Shot Loader Using Kitsu API ( Demonstration Video ) : *https://youtu.be/nhqHIWsesd4*
+  - 'MOLO' Shot Loader Using Kitsu API ( Demonstration Video ) : *https://youtu.be/gKKFInaVVOg*
   - I participated in
     > `open nuke working file`, `new_nuke_working_file` from `loader.py`
     > `save_script`, `clear_current_nuke_file`, `open_current_nuke_file`, `nuke_file_name` from `nuke_function.py`
     > `open_nuke`, `get_outputfiles_path_list`, `identify_nuke_file` from `molo_widget.py`
-- 📝 Personal Python Project *https://github.com/kimseowol/portfolio/tree/main/PersonalProject*
-- 📹 Portfolio Summary video Link : *https://drive.google.com/file/d/1JULg0y2toxtE2OboqQLAByvilveMRaen/view?usp=sharing*
 
 <br>
 </p>
